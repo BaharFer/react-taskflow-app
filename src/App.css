@@ -1,0 +1,172 @@
+.app{
+  width:1200px;
+  height:750px;
+  margin:30px auto;
+  display:flex;
+  gap:20px;
+}
+
+.sidebar{
+    width:280px;
+
+    backdrop-filter: blur(20px);
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:
+      0 8px 32px rgba(0,0,0,.15);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    color:white;
+}
+
+.sidebar h2{
+  margin-bottom:40px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 15px;
+
+    margin-bottom:10px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+.sidebar li:hover{
+
+    background:
+    rgba(255,255,255,.15);
+}
+.active{
+
+    background:
+    rgba(255,255,255,.25);
+}
+
+.sidebar span{
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#ff4f7b;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:12px;
+}
+.main-content{
+  flex:1;
+  background:white;
+  border-radius:30px;
+  padding:40px;
+}
+
+.main-content h1{
+  margin-bottom:30px;
+}
+
+.todo-form{
+  display:flex;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.todo-form input{
+  flex:1;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+
+.todo-form button{
+  padding:15px 25px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.todo-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  margin-bottom:10px;
+  background:#f5f7fa;
+  border-radius:10px;
+}
+
+.completed{
+  text-decoration:line-through;
+  opacity:.5;
+}
+
+.todo-item button{
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+@media (max-width:900px){
+
+  .app{
+
+    width:95%;
+
+    height:auto;
+
+    flex-direction:column;
+
+  }
+
+  .sidebar{
+
+    width:100%;
+  }
+
+}
+
+@media (max-width:600px){
+
+  .main-content{
+
+      padding:20px;
+  }
+
+  .todo-form{
+
+      flex-direction:column;
+  }
+
+  .todo-form button{
+
+      width:100%;
+  }
+
+}

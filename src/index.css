@@ -1,0 +1,20 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5f7385,
+        #dfe8ef
+    );
+
+    font-family:Arial,sans-serif;
+
+}
